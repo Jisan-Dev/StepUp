@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navigation from "./components/Navigation/Navigation";
 import data from "./db/data";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       <Navigation handleInputChange={handleInputChange} query={query} />
+      <Sidebar />
     </>
   );
 }
