@@ -4,6 +4,7 @@ import data from "./db/data";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Recommended from "./components/Recommended/Recommended";
 import Card from "./components/UI/Card";
+import Products from "./components/Products/Products";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -59,6 +60,7 @@ function App() {
       <Navigation handleInputChange={handleInputChange} query={query} />
       <Sidebar handleChange={handleChange} />
       <Recommended handleClick={handleClick} />
+      <Products result={result} />
     </>
   );
 }
