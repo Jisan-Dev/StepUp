@@ -19,12 +19,13 @@ function App() {
   // ----------- Radio Filtering -----------
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
+    console.log(event.target.value);
   };
 
   return (
     <>
       <Navigation handleInputChange={handleInputChange} query={query} />
-      <Sidebar />
+      <Sidebar handleChange={handleChange} />
     </>
   );
 }

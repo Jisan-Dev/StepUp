@@ -22,7 +22,7 @@
 
 .sidebar-label-container input {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
 }
 
